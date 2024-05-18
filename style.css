@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    background-color: rgba(24, 24, 24, 0.929);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(128, 128, 128, 0.801);
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 1px 5px 10px rgb(255, 251, 251);
+   
+}
+
+
+.titulo {
+   background: linear-gradient(120deg, black 0%, green 100%);
+    color: white;
+    padding: 22px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.form {
+   
+    padding: 15px;
+ 
+}
+
+.form-content{
+     margin-bottom: 8px;
+     padding-bottom: 15px;
+     position: relative;
+    
+}
+
+
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 12px;
+    font-size: 20px;
+   
+ 
+}
+
+.form-content input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 17px;
+    box-shadow: 1px 2px 3px rgb(234, 229, 229);
+    outline: none;
+    border: 2px solid white;
+    
+       
+}
+
+
+.form-content a {
+    visibility: hidden;  
+    position: absolute;
+    left: 0px;
+    bottom: 6px;
+  
+}
+
+.form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(120deg, black 0%, green 100%);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.form-content.error input{
+    border-color: red;
+}
+.form-content.error a  {
+    color: red;
+    visibility: visible;
+}
